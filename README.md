@@ -33,4 +33,35 @@ Q6
 ![DCC-Q6-c](https://github.com/LuvAg/DCC_website/assets/143330358/2f5116c4-1845-43ea-ac7d-e789cf293e7e)
 Downloaded chart
 ![party_contributions_chart (5)](https://github.com/LuvAg/DCC_website/assets/143330358/33e3b1e6-dd0d-4aa0-8315-685c1c57b389)
+### Setting Up the Website Locally:
 
+#### 1. Clone the Repository:
+   -If your getting files from git then, clone the public GitHub repository containing the website files to your local machine using the `git clone` command.
+
+#### 2. Install Required Software:
+python,flask,Chat-js,My Sql etc
+
+#### 3. Database Setup:
+If doing for this repository
+   - Set up your database server (e.g., MySQL) and create two tables for storing the CSV data:
+     - `EB_Redemption_Details`
+     - `EB_Purchase_Details`
+
+#### 4. Convert PDFs to CSV:
+   - Use FITZ or another tool to convert provided PDF files to CSV format.
+   - Preprocess data as needed for accurate conversion and save each file.
+
+#### 5. Load CSV Data to Database:
+   - Import converted CSV files into respective tables in the database
+
+#### 6. Configure Flask Application:
+   - Update database connection settings in Flask application code to match local database configuration and connect them
+
+#### 7. Start Flask Server:
+   - Run Flask application by executing main Python file 
+   - Flask server should start locally .
+
+#### 8. Access the Website:
+   - Open a web browser and navigate to `http://localhost:5000` (or specified port) to access locally hosted website.
+   - Homepage of the website should be visible.
+ These are the instructions to set up the website locally on your machine for testing and development.
