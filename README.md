@@ -36,7 +36,7 @@ Downloaded chart
 ### Setting Up the Website Locally:
 
 #### 1. Clone the Repository:
-   -If your getting files from git then, clone the public GitHub repository containing the website files to your local machine using the `git clone` command.
+   -If your getting files from git then, clone the public GitHub repository containing the website files to your local machine using the git clone command.
 
 #### 2. Install Required Software:
 python,flask,Chat-js,My Sql etc
