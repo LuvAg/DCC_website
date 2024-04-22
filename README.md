@@ -43,10 +43,7 @@ python,flask,Chat-js,My Sql etc
 
 #### 3. Database Setup:
 If doing for this repository
-   - Set up your database server (e.g., MySQL) and create two tables for storing the CSV data:
-     - `EB_Redemption_Details`
-     - `EB_Purchase_Details`
-
+   - Set up your database server ( MySQL) and create two tables for storing the CSV data:
 #### 4. Convert PDFs to CSV:
    - Use FITZ or another tool to convert provided PDF files to CSV format.
    - Preprocess data as needed for accurate conversion and save each file.
@@ -62,6 +59,6 @@ If doing for this repository
    - Flask server should start locally .
 
 #### 8. Access the Website:
-   - Open a web browser and navigate to `http://localhost:5000` (or specified port) to access locally hosted website.
+   - Open a web browser and navigate to local file.
    - Homepage of the website should be visible.
  These are the instructions to set up the website locally on your machine for testing and development.
