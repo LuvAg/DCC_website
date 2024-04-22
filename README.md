@@ -1,6 +1,8 @@
 # DCC_website
 Code to convert files in csv
-![](https://github.com/LuvAg/DCC_website/blob/0279868302e228baffa871c620d2a992a5c18f20/DCC%20ss/DCC4-1.png)
+![DCC4-1](https://github.com/LuvAg/DCC_website/assets/143330358/c8ff7bd8-7a24-47ab-9d37-4f9f870c1469)
+
 Website home page
-![Website home page](https://github.com/LuvAg/DCC_website/blob/8a2cf0aede3111461eabfdd990b2232a9c4baf1a/DCC%20ss/DCC4-2.png)
+![DCC4-2](https://github.com/LuvAg/DCC_website/assets/143330358/40315f5f-d2cc-4f61-9518-8e68da81eef4)
+
 ![-Q1-a](https://github.com/LuvAg/DCC_website/assets/143330358/cae0be32-cbff-4745-8f3c-10bef9c4179e)
