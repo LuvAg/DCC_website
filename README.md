@@ -6,10 +6,12 @@ Website home page
 ![DCC4-2](https://github.com/LuvAg/DCC_website/assets/143330358/40315f5f-d2cc-4f61-9518-8e68da81eef4)
 Q1a
 ![-Q1-a](https://github.com/LuvAg/DCC_website/assets/143330358/cae0be32-cbff-4745-8f3c-10bef9c4179e)
+Similarly all other options can also be added 
 ![DCC-Q1-b](https://github.com/LuvAg/DCC_website/assets/143330358/cf8b1f8f-2a1c-4929-9d19-80facb071856)
 ![DCC-Q1-c](https://github.com/LuvAg/DCC_website/assets/143330358/41d67c2c-ab4f-43a9-a0cc-eb045efabb95)
 ![DCC-Q1-d](https://github.com/LuvAg/DCC_website/assets/143330358/041147af-2d34-4092-9adf-f71810f917ce)
 Q1b
+Similarly all other options can also be added 
 ![DCC-Q1b-a](https://github.com/LuvAg/DCC_website/assets/143330358/8fbd7df2-9461-4b77-909c-12640ddc0830)
 ![DCC-Q1b-b](https://github.com/LuvAg/DCC_website/assets/143330358/76091978-350b-4a27-a38f-12abe5535197)
 ![DCC-Q1b-c](https://github.com/LuvAg/DCC_website/assets/143330358/f068fb61-47e0-4fc6-a107-e061bbffaa6b)
