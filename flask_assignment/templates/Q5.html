@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <style>
+        /* Basic CSS styling for the page and table */
+        body {
+            font-family: Arial, sans-serif; /* Use a modern sans-serif font */
+            margin: 20px; /* Add margin around the content */
+        }
+
+        table {
+            width: 100%; /* Make the table width fill the container */
+            border-collapse: collapse; /* Merge table borders */
+            margin-bottom: 20px; /* Add space below the table */
+            border: 1px solid #ccc; /* Add a light gray border around the table */
+        }
+
+        th, td {
+            padding: 10px; /* Add padding to cells */
+            border: 1px solid #ccc; /* Add a light gray border to cells */
+        }
+
+        th {
+            background-color: #f2f2f2; /* Light gray background for headers */
+            font-weight: bold; /* Bold text for headers */
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9; /* Alternating row colors for readability */
+        }
+    </style>
+</head>
+
+<body>
+
+    {% if pp_search_t %}
+    <table>
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in pp_search_t %}
+            <tr>
+                {% for i in range(3) %}
+                    <td>{{ row[i] }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+
+</body>
+
+</html>

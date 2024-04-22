@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search by Political Party</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+        }
+
+        form {
+            display: flex; 
+            flex-direction: column; 
+            width: 300px; /
+        }
+
+        label {
+            margin-bottom: 8px; 
+        }
+
+        input[type="text"] {
+            padding: 8px; 
+            margin-bottom: 12px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+        }
+
+        input[type="submit"] {
+            padding: 10px; 
+            background-color: #007BFF; 
+            color: white; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            transition: background-color 0.3s; 
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="/Q3_search" method="post">
+        <label for="pp_box">Name of the Political Party:</label>
+        <input name="pp_box" type="text" id="pp_box" required>
+        <input type="submit" value="Search" id="search">
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!-- <html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    </form action="/Q6_search" method="post">
+    {% if pp_search_t %}
+    
+    <table border="1">
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+        </tr>
+        {% for row in pp_search_t %}
+        <tr>
+            {%for i in range(2)%}
+                <td>{{ row[i] }}</td>
+            {% endfor %}
+            <!-- Add more table cells as needed -->
+        <!-- </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+
+</body>
+</html> --> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Political Party Pie Chart</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <h1>Political Party Contributions</h1>
+
+    <canvas id="partyPieChart" width="400" height="400"></canvas>
+
+  
+    <button id="saveChartBtn">Save Chart as Image</button>
+
+    {% if pp_search_t %}
+    <table border="1">
+        <tr>
+            <th>Political Party</th>
+            <th>Amount</th>
+        </tr>
+        {% for row in pp_search_t %}
+        <tr>
+            {% for i in range(2) %}
+            <td>{{ row[i] }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+
+ 
+    <script>
+
+        const labels = [];
+        const data = [];
+
+        {% for row in pp_search_t %}
+            labels.push("{{ row[0] }}");
+            data.push({{ row[1] }});
+        {% endfor %}
+
+
+        function generateColors(numColors) {
+            const colors = [];
+            for (let i = 0; i < numColors; i++) {
+                const hue = i * (360 / numColors);
+                const saturation = 75 + Math.random() * 25;
+                const lightness = 60 + Math.random() * 20;
+                colors.push(`hsl(${hue}, ${saturation}%, ${lightness}%)`);
+            }
+            return colors;
+        }
+
+    
+        const ctx = document.getElementById('partyPieChart').getContext('2d');
+        
+
+        const colors = generateColors(24);
+
+
+        const myPieChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: data,
+                    backgroundColor: colors
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Political Party Contributions'
+                    }
+                }
+            }
+        });
+
+       
+        document.getElementById('saveChartBtn').addEventListener('click', function() {
+          
+            const canvas = document.getElementById('partyPieChart');
+            canvas.toBlob(function(blob) {
+             
+                const url = URL.createObjectURL(blob);
+              
+                const a = document.createElement('a');
+      
+                a.href = url;
+              
+                a.download = 'party_contributions_chart.png';
+             
+                a.click();
+          
+                URL.revokeObjectURL(url);
+            });
+        });
+
+    </script>
+    {% endif %}
+
+</body>
+</html>
