@@ -61,4 +61,4 @@ If doing for this repository
 #### 8. Access the Website:
    - Open a web browser and navigate to local file.
    - Homepage of the website should be visible.
- These are the instructions to set up the website locally on your machine for testing and development.
+These are the instructions to set up the website locally on your machine for testing and development.
